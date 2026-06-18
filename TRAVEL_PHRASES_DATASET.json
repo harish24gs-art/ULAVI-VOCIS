@@ -1,0 +1,20 @@
+{
+  "sourceOfTruth": "backend/services/TravelLanguageDataset.js",
+  "supportedLanguages": ["English", "Tamil", "Tanglish", "Hindi", "Malayalam", "Kannada", "Telugu", "Bengali", "Urdu", "Arabic", "Malay", "French", "Chinese", "Japanese", "Korean", "Vietnamese"],
+  "phraseFamilies": {
+    "yes": ["yes", "yeah", "sure", "okay", "confirm", "aama", "seri", "haan", "ji", "oui"],
+    "no": ["no", "nope", "cancel", "not required", "vendam", "illa", "nahin"],
+    "airport": ["airport", "air port", "terminal", "flight place", "aerodrome"],
+    "pickup": ["pickup", "pick up", "collect", "take me", "receive", "eduthukanum", "pickup pannunga"],
+    "dropoff": ["drop", "dropoff", "leave me", "irakkanum", "drop pannunga"],
+    "destination": ["go to", "reach", "poganum", "jana hai", "travel to", "varaikum"],
+    "passengers": ["person", "people", "travellers", "passengers", "peru", "jan", "members"],
+    "date": ["today", "tomorrow", "next week", "this weekend", "kal", "naalai", "demain"],
+    "time": ["morning", "afternoon", "evening", "night", "subah", "kaalai", "pagi"],
+    "luggage": ["bags", "luggage", "petti", "suitcase", "baggage"],
+    "vehicles": ["car", "cab", "taxi", "van", "bus", "luxury vehicle", "chauffeur"],
+    "hotel": ["hotel", "stay", "resort", "accommodation", "room"],
+    "tourPackage": ["trip", "vacation", "holiday", "tour", "package"],
+    "travelIntents": ["need transport", "want pickup", "need airport transfer", "tour venum", "package venum"]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "airports": {
+    "Chennai Airport": ["chennai airport", "chennai international airport", "madras airport", "maa airport"],
+    "Delhi Airport": ["delhi airport", "new delhi airport", "igi airport"],
+    "Mumbai Airport": ["mumbai airport", "bombay airport"],
+    "Changi Airport": ["changi", "changi airport", "singapore airport", "sin airport"],
+    "Kuala Lumpur International Airport": ["klia", "kuala lumpur airport", "kuala lumpur international airport"],
+    "Dubai Airport": ["dubai airport", "dxb airport"],
+    "Charles de Gaulle Airport": ["charles de gaulle", "cdg", "paris airport"],
+    "Narita Airport": ["narita", "narita airport"]
+  },
+  "cities": {
+    "Villivakkam": ["villivakkam", "villiwakkam", "willyvakkam", "villivakkam varaikum"],
+    "Coimbatore": ["coimbatore", "koimbatore", "koyambuthur", "kovai"],
+    "Madurai": ["madurai", "madura"],
+    "Noida": ["noida"],
+    "Bukit Bintang": ["bukit bintang"],
+    "Johor Bahru": ["johor bahru", "johor", "jb"],
+    "Tokyo Station": ["tokyo station"],
+    "Eiffel Tower": ["eiffel tower", "tour eiffel"]
+  },
+  "touristDestinations": {
+    "Marina Bay Sands": ["marina bay sands", "mbs"],
+    "Sentosa": ["sentosa"],
+    "Petronas Towers": ["petronas", "petronas towers"],
+    "Burj Khalifa": ["burj khalifa"],
+    "Louvre Museum": ["louvre", "louvre museum"],
+    "Shibuya": ["shibuya"],
+    "Shinjuku": ["shinjuku"]
+  }
+}

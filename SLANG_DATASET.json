@@ -1,0 +1,17 @@
+{
+  "sourceOfTruth": "backend/services/TravelLanguageDataset.js",
+  "editCommands": {
+    "English": ["update", "change", "correct", "replace", "remove", "clear", "delete"],
+    "Tamil": ["maatru", "maathu", "badhilaga", "neeku", "clear pannu"],
+    "Hindi": ["badlo", "badal do", "sahi karo", "hatao", "nikalo"],
+    "French": ["changer", "remplacer", "corriger", "supprimer", "effacer"],
+    "Chinese": ["genggai", "gengxin", "xiugai", "shanchu"]
+  },
+  "voiceTranscriptionExamples": {
+    "Coimbatore": ["koimbatore", "koyambuthur", "koyambatore"],
+    "Villivakkam": ["villivakam", "willyvakkam", "villivakkum"],
+    "Chennai": ["chenai", "channai", "madras"],
+    "WhatsApp": ["whats app", "watsapp", "whatsapp number"]
+  },
+  "travelFillersToRemove": ["poganum", "poanum", "varanum", "varaikum", "to", "towards", "reach", "drop", "pickup", "please", "need", "want"]
+}
