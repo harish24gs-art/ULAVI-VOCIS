@@ -1,0 +1,285 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f8f9fa;
+  color: #212529;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.texture-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+}
+
+::selection {
+  background: rgba(215, 180, 106, 0.45);
+}
+
+.voice-wave-bar {
+  display: block;
+  width: 3px;
+  height: 7px;
+  border-radius: 999px;
+  background: linear-gradient(to top, #d7b46a, #9cc7ff);
+  animation: voice-wave 850ms ease-in-out infinite;
+}
+
+.voice-linear-bar {
+  display: block;
+  width: 100%;
+  max-width: 7px;
+  flex: 1 1 0;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(to top, #d7b46a, #0066da, #00c68d);
+  box-shadow: 0 0 10px rgba(0, 102, 218, 0.22);
+  transition: height 90ms ease-out, opacity 90ms ease-out;
+}
+
+.voice-linear-bar-active {
+  animation: voice-linear-wave 760ms ease-in-out infinite;
+}
+
+@keyframes voice-wave {
+  0%,
+  100% {
+    height: 6px;
+    opacity: 0.55;
+  }
+
+  50% {
+    height: 26px;
+    opacity: 1;
+  }
+}
+
+@keyframes voice-linear-wave {
+  0%,
+  100% {
+    height: 4px;
+    opacity: 0.52;
+  }
+
+  50% {
+    height: 26px;
+    opacity: 1;
+  }
+}
+
+.ulavi-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(147, 197, 253, 0.92);
+  box-shadow: 0 0 18px rgba(96, 165, 250, 0.85);
+  animation: ulavi-float 7s ease-in-out infinite;
+}
+
+.ulavi-wave-bar {
+  display: block;
+  width: 3px;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(to top, rgba(59, 130, 246, 0.18), #60a5fa, #c4b5fd);
+  box-shadow: 0 0 16px rgba(96, 165, 250, 0.45);
+  animation: ulavi-wave 950ms ease-in-out infinite;
+}
+
+.ulavi-wave-bar-hero {
+  width: 5px;
+  min-height: 18px;
+  animation-duration: 780ms;
+}
+
+.ulavi-mic-button {
+  animation: ulavi-mic-breathe 2.8s ease-in-out infinite;
+}
+
+.ulavi-mic-button:hover .ulavi-mic-ripple {
+  opacity: 1;
+  animation: ulavi-ripple 900ms ease-out infinite;
+}
+
+.ulavi-mic-ring {
+  position: absolute;
+  inset: -20px;
+  border-radius: 999px;
+  border: 1px solid rgba(147, 197, 253, 0.5);
+  animation: ulavi-pulse 2s ease-out infinite;
+}
+
+.ulavi-mic-ripple {
+  position: absolute;
+  inset: -28px;
+  border-radius: 999px;
+  border: 1px solid rgba(196, 181, 253, 0.42);
+  opacity: 0;
+}
+
+.service-card-description {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.language-orbit-pill {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ulavi-globe {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 34% 28%, rgba(255, 255, 255, 0.28), transparent 21%),
+    radial-gradient(circle at 62% 68%, rgba(168, 85, 247, 0.3), transparent 28%),
+    radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.52), rgba(24, 31, 92, 0.82) 58%, rgba(2, 6, 23, 0.94) 100%);
+  box-shadow:
+    inset -38px -28px 54px rgba(2, 6, 23, 0.56),
+    inset 22px 18px 32px rgba(255, 255, 255, 0.09),
+    0 0 72px rgba(96, 165, 250, 0.46);
+}
+
+.ulavi-globe::before,
+.ulavi-globe::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.ulavi-globe::before {
+  background:
+    linear-gradient(90deg, transparent 47%, rgba(147, 197, 253, 0.28) 49%, transparent 51%),
+    linear-gradient(0deg, transparent 47%, rgba(147, 197, 253, 0.2) 49%, transparent 51%),
+    repeating-linear-gradient(90deg, transparent 0 26px, rgba(147, 197, 253, 0.13) 27px 28px),
+    repeating-linear-gradient(0deg, transparent 0 26px, rgba(147, 197, 253, 0.1) 27px 28px);
+  opacity: 0.75;
+  mask-image: radial-gradient(circle, black 66%, transparent 71%);
+}
+
+.ulavi-globe::after {
+  background: radial-gradient(circle at 28% 18%, rgba(255, 255, 255, 0.42), transparent 18%);
+  mix-blend-mode: screen;
+  opacity: 0.8;
+}
+
+@keyframes ulavi-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: translate3d(12px, -22px, 0);
+    opacity: 0.95;
+  }
+}
+
+@keyframes ulavi-wave {
+  0%,
+  100% {
+    height: 9px;
+    opacity: 0.45;
+  }
+
+  50% {
+    height: 64px;
+    opacity: 1;
+  }
+}
+
+@keyframes ulavi-pulse {
+  0% {
+    transform: scale(0.86);
+    opacity: 0.85;
+  }
+
+  100% {
+    transform: scale(1.18);
+    opacity: 0;
+  }
+}
+
+@keyframes ulavi-mic-breathe {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 12px rgba(67, 92, 255, 0.12),
+      0 0 88px rgba(67, 92, 255, 0.78),
+      0 0 132px rgba(168, 85, 247, 0.3);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 18px rgba(67, 92, 255, 0.18),
+      0 0 128px rgba(67, 92, 255, 1),
+      0 0 168px rgba(168, 85, 247, 0.46);
+  }
+}
+
+@keyframes ulavi-ripple {
+  0% {
+    transform: scale(0.88);
+    opacity: 0.82;
+  }
+
+  100% {
+    transform: scale(1.28);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .ulavi-wave-bar {
+    height: 8px;
+  }
+
+  .ulavi-mic-ring {
+    inset: -14px;
+  }
+
+  .ulavi-mic-ripple {
+    inset: -18px;
+  }
+
+  @keyframes ulavi-wave {
+    0%,
+    100% {
+      height: 6px;
+    }
+
+    50% {
+      height: 28px;
+    }
+  }
+}

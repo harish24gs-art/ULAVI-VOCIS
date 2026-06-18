@@ -1,0 +1,5 @@
+
+> ulavi-vocis-3@3.0.0 dev:backend
+> node backend/server.js
+
+Ulavi Vocis API listening on http://127.0.0.1:3000
